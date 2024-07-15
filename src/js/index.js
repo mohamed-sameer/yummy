@@ -308,6 +308,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const areaContainer = document.querySelector(".area-container");
     const ingredientContainer = document.querySelector(".ingredient-container");
     const contactContainer = document.querySelector(".contact-container");
+    const recipesDetails = document.querySelector(".recipes-details");
 
     // click categories
     if (e.target.innerText.toLowerCase() === "categories") {
@@ -316,6 +317,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       areaContainer.classList.add("hidden");
       ingredientContainer.classList.add("hidden");
       contactContainer.classList.add("hidden");
+      recipesDetails.classList.add("hidden");
       categoriesContainer.classList.remove("hidden");
     }
     // click area list
@@ -325,6 +327,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       categoriesContainer.classList.add("hidden");
       contactContainer.classList.add("hidden");
       ingredientContainer.classList.add("hidden");
+      recipesDetails.classList.add("hidden");
       areaContainer.classList.remove("hidden");
     }
 
@@ -335,6 +338,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       categoriesContainer.classList.add("hidden");
       areaContainer.classList.add("hidden");
       contactContainer.classList.add("hidden");
+      recipesDetails.classList.add("hidden");
       ingredientContainer.classList.remove("hidden");
     }
 
@@ -344,6 +348,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       categoriesContainer.classList.add("hidden");
       areaContainer.classList.add("hidden");
       ingredientContainer.classList.add("hidden");
+      recipesDetails.classList.add("hidden");
       contactContainer.classList.remove("hidden");
     }
   });
