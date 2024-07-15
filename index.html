@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="src/images/logo.png" type="image/x-icon" />
+    <title>Yummy</title>
+    <link rel="stylesheet" href="src/css/all.min.css" />
+    <link rel="stylesheet" href="src/css/output.css" />
+  </head>
+  <body class="bg-white dark:bg-black">
+    <section class="home-page">
+      <header
+        class="fixed top-0 left-0 bottom-0 w-[200px] bg-white grid grid-cols-[200px_50px] transform -translate-x-[200px] duration-300 z-[999]"
+      >
+        <nav class="bg-gray-950 text-white p-4">
+          <ul class="nav-li flex flex-col justify-start gap-4 overflow-hidden">
+            <li class="cursor-pointer duration-300 translate-y-[1000%]">
+              Search
+            </li>
+            <li class="cursor-pointer duration-1000 translate-y-[1000%]">
+              Categories
+            </li>
+            <li class="cursor-pointer duration-300 translate-y-[1000%]">
+              Area
+            </li>
+            <li class="cursor-pointer duration-300 translate-y-[1000%]">
+              Ingredients
+            </li>
+            <li class="cursor-pointer duration-300 translate-y-[1000%]">
+              Contact Us
+            </li>
+          </ul>
+        </nav>
+        <div class="bg-white">
+          <ul class="flex flex-col justify-between items-center h-full py-4">
+            <li>
+              <img
+                class="w-16 h-16 object-contain"
+                src="src/images/logo.png"
+                alt="logo"
+              />
+            </li>
+            <li class="bars cursor-pointer">
+              <span class="text-2xl">
+                <i class="fa-solid fa-bars"></i>
+              </span>
+            </li>
+            <li class="flex flex-col justify-center items-center gap-4">
+              <span class="text-lg">
+                <i class="fa-solid fa-globe"></i>
+              </span>
+              <span class="text-lg">
+                <i class="fa-solid fa-share-nodes"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="pl-16">
+        <main class="w-[calc(100vw-80px)]">
+          <section id="recipes" class="my-8">
+            <!-- hide on details -->
+            <div class="recipes-container px-4 md:px-6 lg:px-8">
+              <div
+                class="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
+              ></div>
+            </div>
+
+            <!-- meal details -->
+            <div class="recipes-details dark:text-white hidden">
+              <div
+                class="grid grid-cols-1 md:grid-cols-[30%_minmax(0,1fr)] gap-5"
+              >
+                <div class="px-5">
+                  <img class="w-full" src="src/images/logo.png" alt="" />
+                  <h2 class="text-4xl font-bold capitalize mt-5">meal name</h2>
+                </div>
+                <div class="px-5">
+                  <div>
+                    <h1 class="text-5xl font-bold capitalize">meal title</h1>
+                    <p class="my-3">description</p>
+                  </div>
+                  <div>
+                    <ul>
+                      <li>
+                        <h2 class="text-2xl font-bold">
+                          Area: <span>test</span>
+                        </h2>
+                      </li>
+                      <li>
+                        <h2 class="text-2xl font-bold">
+                          Category: <span>test</span>
+                        </h2>
+                      </li>
+                      <li>
+                        <h2 class="text-2xl font-bold">Recipes:</h2>
+                        <ul class="my-3 flex gap-2">
+                          <li
+                            class="bg-blue-300 px-3 py-1 rounded text-blue-950"
+                          >
+                            one
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <h2 class="text-2xl font-bold my-4">Tags:</h2>
+                        <span
+                          class="rounded-md bg-green-600 p-3 me-2 cursor-pointer"
+                          >Source</span
+                        >
+                        <span class="rounded-md bg-red-600 p-3 cursor-pointer"
+                          >YouTube</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- meals categories -->
+            <div class="categories-container px-4 md:px-6 lg:px-8 hidden">
+              <div
+                class="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
+              ></div>
+            </div>
+
+            <!-- area section -->
+            <div class="area-container px-4 md:px-6 lg:px-8 hidden">
+              <div
+                class="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
+              ></div>
+            </div>
+
+            <!-- ingredient section -->
+            <div class="ingredient-container px-4 md:px-6 lg:px-8 hidden">
+              <div
+                class="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
+              ></div>
+            </div>
+
+            <!-- contact Us Section -->
+            <div
+              class="contact-container h-screen flex px-4 md:px-6 lg:px-8 hidden items-center justify-center flex-col"
+            >
+              <div class="card-container grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <input
+                  class="p-2 rounded-md"
+                  type="text"
+                  name="name"
+                  placeholder="Enter Your Name"
+                />
+                <input
+                  class="p-2 rounded-md"
+                  type="text"
+                  name="name"
+                  placeholder="Enter Your Name"
+                />
+                <input
+                  class="p-2 rounded-md"
+                  type="text"
+                  name="name"
+                  placeholder="Enter Your Name"
+                />
+                <input
+                  class="p-2 rounded-md"
+                  type="text"
+                  name="name"
+                  placeholder="Enter Your Name"
+                />
+                <input
+                  class="p-2 rounded-md"
+                  type="text"
+                  name="name"
+                  placeholder="Enter Your Name"
+                />
+                <input
+                  class="p-2 rounded-md"
+                  type="text"
+                  name="name"
+                  placeholder="Enter Your Name"
+                />
+              </div>
+              <div class="mt-4">
+                <button
+                  class="dark:text-red-500 rounded-md border border-red-600 py-2 px-3"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
